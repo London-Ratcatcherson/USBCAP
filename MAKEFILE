@@ -1,0 +1,14 @@
+C_FLAGS = -c -Od
+PROJECT = usbcap
+L_FLAGS = -release
+O_FILES = $(PROJECT).obj
+L_FILES = user32.lib gdi32.lib vfw32.lib
+RC_FILES  = usbcap.rc
+RES_FILES = usbcap.res
+	 
+$(PROJECT): $(O_FILES)
+			rc $(RC_FILES)
+			link $(L_FLAGS) -out:$(PROJECT).exe $(O_FILES) $(L_FILES) $(RES_FILES)
+
+.c.obj:
+	cl $(C_FLAGS) $<

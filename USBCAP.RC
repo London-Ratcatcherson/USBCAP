@@ -1,0 +1,98 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "usbcap.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Capture File",                ID_CAPTUREFILE
+        MENUITEM "Save &As",                    ID_SAVEAS
+        MENUITEM "Save &DIB",                   ID_SAVEDIB
+        MENUITEM "Clipboard",                   ID_CLIPBOARD
+        MENUITEM "&Exit",                       ID_EXIT
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "Audio Format",                ID_AUDIOFORMAT_DLG
+        MENUITEM SEPARATOR
+        MENUITEM "Video Format",                ID_FORMAT_DLG
+        MENUITEM "Video Source",                ID_SOURCE_DLG
+        MENUITEM "Video Display",               ID_DISPLAY_DLG
+        MENUITEM SEPARATOR
+        MENUITEM "Compression",                 ID_COMPRESSION_DLG
+        MENUITEM SEPARATOR
+        MENUITEM "Preview",                     ID_PREVIEW, CHECKED
+    END
+    POPUP "&Capture"
+    BEGIN
+        MENUITEM "&Start",                      ID_START
+        MENUITEM "Single &Frame",               ID_SINGLE_FRAME
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""usbcap.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
